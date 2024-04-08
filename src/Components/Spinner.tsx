@@ -1,6 +1,8 @@
+import './Spinner.scss';
+
 type Spinner = {
-   color: string;
-   size: number;
+   color?: string;
+   size?: number;
 };
 
 export const Spinner: React.FC<Spinner> = ({ color, size }) => {
