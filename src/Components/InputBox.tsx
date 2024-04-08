@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import "./sass/components/_InputBox.scss";
+import "./_InputBox.scss";
 
 type placeholderText = {
   children: string;
@@ -24,7 +24,7 @@ export const InputBox = ({ children, animate }: placeholderText & animate) => {
     <input
       type="text"
       placeholder={children}
-      className={`inactive-input ${animate ? activeInput : ""}`}
+      className={`inactive-input ${animate && activeInput}`}
       ref={inputRef}
       onFocus={() => changeActive("active-input")}
       onBlur={() => changeActive("inactive-input")}
