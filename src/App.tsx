@@ -1,9 +1,9 @@
-import { Spinner } from './Spinner';
+import { Spinner } from './Components/Spinner';
 
 function App() {
    return (
       <>
-         <Spinner color="black" size={80}></Spinner>
+         <Spinner></Spinner>
       </>
    );
 }
